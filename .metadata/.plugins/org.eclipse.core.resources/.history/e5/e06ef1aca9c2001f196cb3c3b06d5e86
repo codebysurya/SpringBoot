@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee search</title>
+	</head>
+	<body>
+		<div>
+					<h2>search for product</h2>
+					<form th:action="@{/searchById}" method="post">
+						<label for="id">Enter-ID:</label>
+						<input type="number" name="id" id="id" >
+						<button type="submit">search</button>
+					</form>
+		</div>
+		
+		
+		<div>
+			<h3>Employee Details</h3>
+			<p><strong>ID:</strong> <span th:text="${employeeEntity.id}"></span></p>
+			<p><strong>Name:</strong> <span th:text="${employeeEntity.name}"></span></p>
+			<p><strong>Department:</strong> <span th:text="${employeeEntity.dept}"></span></p>
+			<p><strong>Address:</strong> <span th:text="${employeeEntity.adress}"></span></p>
+			<p><strong>College:</strong> <span th:text="${employeeEntity.college}"></span></p>
+			<p><strong>Age:</strong> <span th:text="${employeeEntity.age}"></span></p>
+			<p><strong>Salary:</strong> <span th:text="${employeeEntity.salary}"></span></p>
+			<p><strong>Bonus:</strong> <span th:text="${employeeEntity.bouns}"></span></p>
+			<p><strong>PF:</strong> <span th:text="${employeeEntity.pf}"></span></p>
+
+		</div>
+
+	</body>
+</html>

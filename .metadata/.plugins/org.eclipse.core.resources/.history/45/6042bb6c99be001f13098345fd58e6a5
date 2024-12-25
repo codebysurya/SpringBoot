@@ -1,0 +1,49 @@
+package com.tcs.spring.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tcs.spring.entity.ProductEntity;
+import com.tcs.spring.lombok.ProductCOntroll;
+import com.tcs.spring.repository.ProductRepository;
+
+
+@Service
+public class ProductService {
+	
+	@Autowired
+	ProductRepository repository;
+	
+	public void saveProductDetails(ProductCOntroll productcontroll) {
+		double discountPrice;
+		discountPrice=productcontroll.getPrice()*10;
+		double offerPrice;
+		offerPrice=discountPrice-productcontroll.getPrice();
+		double taxPrice;
+		taxPrice=offerPrice*0.18;
+		double finalPrice;
+		finalPrice=offerPrice+taxPrice;
+		double stockValue;
+		stockValue=finalPrice*productcontroll.getQuantity();
+		ProductEntity productEntity=new ProductEntity();
+		productEntity.setName(productcontroll.getName());
+		productEntity.setBrand(productcontroll.getBrand());
+		productEntity.setMadein(productcontroll.getMadein());
+		productEntity.setPrice(productcontroll.getPrice());
+		productEntity.setQuantity(productcontroll.getQuantity());
+//		productEntity.setDiscountrate(productcontroll.getDiscountrate());
+		productEntity.setDiscountprice(discountPrice);
+		productEntity.setOfferprice(offerPrice);
+		productEntity.setTaxrate(taxPrice);
+		productEntity.setFinalprice(finalPrice);
+		productEntity.setStockvalue(stockValue);
+		repository.save(productEntity);
+	}
+	
+	
+	
+	
+	
+	
+
+}

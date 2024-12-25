@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"> <!-- Correct path to CSS -->
+</head>
+<body>
+    
+    <h2>Employee Form</h2>
+    <form th:action="@{/empformsaved}" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text"  name="name" required><br><br>
+
+        <label for="dept">dept:</label><br>
+        <input type="text" id="dept" name="dept" required><br><br>
+
+        <label for="Adress">Adress:</label><br>
+        <input type="text" id="Adress" name="adress" required><br><br>
+		
+		<label for="college">college:</label><br>
+		<input type="text" id="college" name="college" required><br><br>
+		
+		<label for="age">age:</label><br>
+		<input type="number" id="age" name="age" required><br><br>
+
+       
+		<label for="salary">salary:</label><br>
+		 <input type="number" id="salary" name="salary" required><br><br>
+				
+				
+				
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

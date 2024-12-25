@@ -1,0 +1,5 @@
+package com.tcs.spring.entity;
+
+public class ProductEntity {
+
+}

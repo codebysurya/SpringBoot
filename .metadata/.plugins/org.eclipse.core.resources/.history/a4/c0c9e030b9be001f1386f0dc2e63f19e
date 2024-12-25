@@ -1,0 +1,46 @@
+package com.tcs.spring.employee.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tcs.spring.employee.empmodel.EmployeeModel;
+import com.tcs.spring.employee.entity.EmployeeEntity;
+import com.tcs.spring.employee.repository.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+
+	
+	@Autowired
+	EmployeeRepository employeerepository;
+	
+	public void svaeEmployeeDetails(EmployeeModel employeeModel) {
+		
+		double bonus;
+		bonus=employeeModel.getSalary()*(1/100);
+		
+		double pf;
+		pf=employeeModel.getAge()*(employeeModel.getSalary()*(1/100));
+		
+		
+		EmployeeEntity employeeEntity=new EmployeeEntity();
+		
+		employeeEntity.setName(employeeModel.getName());
+		employeeEntity.setDept(employeeModel.getDept());
+		employeeEntity.setAdress(employeeModel.getAdress());
+		employeeEntity.setCollege(employeeModel.getCollege());
+		employeeEntity.setAge(employeeModel.getAge());
+		employeeEntity.setSalary(employeeModel.getSalary());
+		employeeEntity.setBouns(bonus);
+		employeeEntity.setPf(pf);
+		employeerepository.save(employeeEntity);
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"> <!-- Correct path to CSS -->
+</head>
+<body>
+    
+    <h2>Employee Form</h2>
+    <form th:action="@{/saveProduct}" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text"  name="name" required><br><br>
+
+        <label for="brand">dept:</label><br>
+        <input type="text" id="brand" name="dept" required><br><br>
+
+        <label for="madein">Adress:</label><br>
+        <input type="text" id="madein" name="adress" required><br><br>
+
+       
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

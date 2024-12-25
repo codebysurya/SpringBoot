@@ -1,0 +1,13 @@
+package com.tcs.spring.employee.empmodel;
+
+import lombok.Data;
+
+@Data
+public class EmployeeModel {
+	
+       private String name;
+       private String dept;
+       private String adress;
+//       private 
+
+}

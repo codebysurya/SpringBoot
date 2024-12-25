@@ -1,0 +1,30 @@
+package com.tcs.spring.employee.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tcs.spring.employee.empmodel.EmployeeModel;
+import com.tcs.spring.employee.repository.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+
+	
+	@Autowired
+	EmployeeRepository employeerepository;
+	
+	public void svaeEmployeeDetails(EmployeeModel employeeModel) {
+		
+		double bonus;
+		bonus=employeeModel.getSalary()*(1/100);
+		
+		double pf;
+		pf=employeeModel.getAge()*(employeeModel.getSalary()*(1/100));
+		
+		
+		
+	}
+	
+	
+	
+}

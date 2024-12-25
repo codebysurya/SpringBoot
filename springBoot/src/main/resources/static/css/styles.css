@@ -1,0 +1,68 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light aqua */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+form {
+    background-color: rgb(255, 128, 0); /* Orange background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    width: 300px;
+    text-align: left;
+}
+
+/* Heading styling */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: darkorchid;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007bff; /* Blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Add some spacing at the bottom */
+form input {
+    margin-bottom: 15px;
+}

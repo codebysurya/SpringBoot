@@ -1,0 +1,5 @@
+package com.tcs.spring.employee.repository;
+
+public interface EmployeeRepository {
+
+}

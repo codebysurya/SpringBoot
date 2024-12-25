@@ -1,0 +1,40 @@
+package com.tcs.spring.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import com.tcs.spring.lombok.ProductCOntroll;
+import com.tcs.spring.service.ProductService;
+
+
+@Controller
+public class TestController {
+	
+//	this belongs to productControll
+	
+	@Autowired
+	ProductService proService;
+	
+	@GetMapping("/test")
+	public String greet() {
+		return "add-product";
+	}
+	
+	
+	@PostMapping("/saveProduct")
+	public String saveProduct(  ProductCOntroll productcontroll) {
+		
+		System.out.println(productcontroll);
+		//TODO: process POST request
+		
+		return "success";
+	}
+	
+
+}
+
+
+
+
+
