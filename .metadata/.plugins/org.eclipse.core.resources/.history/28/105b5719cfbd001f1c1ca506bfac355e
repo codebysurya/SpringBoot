@@ -1,5 +1,0 @@
-package com.tcs.spring.repository;
-
-public class ProductRepository {
-
-}

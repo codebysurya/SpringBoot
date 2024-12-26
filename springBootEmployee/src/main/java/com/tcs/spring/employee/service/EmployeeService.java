@@ -74,6 +74,19 @@ public class EmployeeService {
 		
 		
 	}
+
+
+
+
+
+	public void deleteEmpById(Long id) {
+		
+		
+        employeerepository.deleteById(id);
+        
+
+		
+	}
 	
 	
 	
