@@ -1104,3 +1104,150 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 14:45:10.747
 !MESSAGE Classpath changed for project: springBootRest
+
+!ENTRY org.eclipse.equinox.security 1 0 2024-12-27 14:56:46.594
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.egit.core 4 0 2024-12-27 14:56:47.135
+!MESSAGE An exception occurred during push on URI https://github.com/codebysurya/SpringBoot.git: https://github.com/codebysurya/SpringBoot.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/codebysurya/SpringBoot.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-12-27 14:56:47.138
+!MESSAGE Can't connect to any repository: https://github.com/codebysurya/SpringBoot.git (https://github.com/codebysurya/SpringBoot.git: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2024-12-27 14:57:29.235
+!MESSAGE An exception occurred during push on URI https://github.com/codebysurya/SpringBoot.git: https://github.com/codebysurya/SpringBoot.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/codebysurya/SpringBoot.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:694)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:636)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:540)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-12-27 14:57:29.237
+!MESSAGE Can't connect to any repository: https://github.com/codebysurya/SpringBoot.git (https://github.com/codebysurya/SpringBoot.git: not authorized)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:01:08.002
+!MESSAGE Classpath changed for project: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:01:08.003
+!MESSAGE Boot project REMOVED: springBootRest
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-27 15:01:08.009
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): springBootRest does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-12-27 15:01:08.010
+!MESSAGE springBootRest does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-27 15:01:08.011
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): springBootRest does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-12-27 15:01:08.011
+!MESSAGE springBootRest does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:03:01.746
+!MESSAGE Classpath changed for project: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:03:01.746
+!MESSAGE Boot project ADDED: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:03:02.521
+!MESSAGE Classpath changed for project: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:16:46.320
+!MESSAGE Classpath changed for project: springBootRestOracle
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:16:46.321
+!MESSAGE Boot project ADDED: springBootRestOracle
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:16:47.130
+!MESSAGE Classpath changed for project: springBootRestOracle
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:43:53.684
+!MESSAGE Classpath changed for project: springBootRestOracle
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-27 15:43:53.684
+!MESSAGE Boot project REMOVED: springBootRestOracle
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-27 15:43:53.694
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): springBootRestOracle does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-12-27 15:43:53.695
+!MESSAGE springBootRestOracle does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-27 15:43:53.695
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): springBootRestOracle does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-12-27 15:43:53.696
+!MESSAGE springBootRestOracle does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2024-12-27 15:43:53.696
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): springBootRestOracle does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2535)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2329)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2372)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:439)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-12-27 15:43:53.696
+!MESSAGE springBootRestOracle does not exist
