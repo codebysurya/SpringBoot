@@ -19,6 +19,21 @@ public class EmployeeService {
 		return employeeRepository.save(employee);
 		
 	}
+	
+	
+	
+public List<EmployeeEntitty> saveAllEmployee(List<EmployeeEntitty> employeeEntitty) {
+	
+	return employeeRepository.saveAll(employeeEntitty);
+	
+	
+		
+		
+	}
+
+
+
+
 
 	public List<EmployeeEntitty> getAllEmp() {
 		
@@ -56,5 +71,7 @@ public class EmployeeService {
 		
 		return  employeeRepository.findEmpoyeeBySalaryRangeANDDept(minSalary, maxSalary, dept);
 	}
+
+	
 
 }

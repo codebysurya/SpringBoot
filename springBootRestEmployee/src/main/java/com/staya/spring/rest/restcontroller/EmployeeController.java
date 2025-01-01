@@ -38,6 +38,20 @@ public class EmployeeController {
 	}
 	
 	
+	@PostMapping("/saveallemployee")
+	public ResponseEntity<List<EmployeeEntitty>> saveAllEmployee(@RequestBody List<EmployeeEntitty> employeeEntitty){
+		  
+		
+		List<EmployeeEntitty> emps=employeeService.saveAllEmployee(employeeEntitty);
+		
+		return ResponseEntity.status(HttpStatus.CREATED)
+				             .header("info","data saved surya")
+				             .body(emps);
+		
+		              
+	}
+	
+	
 	@GetMapping("/getallemployee")
 	public ResponseEntity<List<EmployeeEntitty>> getAllEmp(){
 		List<EmployeeEntitty> emp= employeeService.getAllEmp();
@@ -83,7 +97,7 @@ public class EmployeeController {
 //		}
 //		else {
 //			ErrorResponse errorResponse=new ErrorResponse();
-//			errorResponse.setStatuscode(HttpStatus.NOT_FOUND.value());
+//			errorResponse.setStatuscode(HttpStatus.NOT_FOUND.value());          THIS ONE HERE IS SEND CUSTOME ERROR RESPOSE FOR REAL TIME USE
 //			errorResponse.setMessage("Data not found with given ID"+id);
 //			errorResponse.setTimestamp(LocalDateTime.now());
 //			return ResponseEntity.status(HttpStatus.NOT_FOUND)
