@@ -1251,3 +1251,309 @@ Java Model Exception: Error in Java Model (code 969): springBootRestOracle does 
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2024-12-27 15:43:53.696
 !MESSAGE springBootRestOracle does not exist
+!SESSION 2024-12-30 14:52:54.061 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-30 14:52:57.669
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-30 14:53:01.633
+!MESSAGE Logback config file: C:\SpringBootExamples\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-12-30 14:53:02.179
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-30 14:53:02.179
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-12-30 14:53:02.589
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-30 14:53:02.589
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-30 14:53:07.014
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/SpringBootExamples/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1735550587013
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:53:07.015
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-30 14:53:07.034
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 20136
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2024-12-30 14:53:07.158
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:53:08.396
+!MESSAGE Boot project ADDED: springBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:53:08.401
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:53:08.403
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:53:08.419
+!MESSAGE Boot project ADDED: springBootEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:53:08.420
+!MESSAGE Boot project ADDED: springBootRest
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-30 14:53:08.440
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\surya'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:54:31.710
+!MESSAGE Classpath changed for project: springBootRestEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:54:31.711
+!MESSAGE Boot project ADDED: springBootRestEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 14:54:31.901
+!MESSAGE Classpath changed for project: springBootRestEmployee
+!SESSION 2024-12-30 22:07:54.118 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-30 22:07:56.528
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-30 22:07:59.762
+!MESSAGE Logback config file: C:\SpringBootExamples\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-12-30 22:08:00.178
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-30 22:08:00.178
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-12-30 22:08:00.436
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-30 22:08:00.436
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-30 22:08:04.364
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/SpringBootExamples/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1735576684363
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:04.364
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-30 22:08:04.378
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2108
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2024-12-30 22:08:04.523
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:06.116
+!MESSAGE Boot project ADDED: springBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:06.117
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:06.119
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:06.125
+!MESSAGE Boot project ADDED: springBootEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:06.131
+!MESSAGE Boot project ADDED: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-30 22:08:06.132
+!MESSAGE Boot project ADDED: springBootRestEmployee
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-30 22:08:06.262
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\surya'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-12-31 14:26:44.829 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-31 14:26:48.226
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-31 14:26:51.759
+!MESSAGE Logback config file: C:\SpringBootExamples\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-12-31 14:26:52.176
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-31 14:26:52.176
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-12-31 14:26:52.426
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-12-31 14:26:52.426
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-31 14:26:56.436
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/SpringBootExamples/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1735635416436
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:56.437
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-12-31 14:26:56.452
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 22216
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2024-12-31 14:26:56.594
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:58.070
+!MESSAGE Boot project ADDED: springBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:58.071
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:58.072
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:58.078
+!MESSAGE Boot project ADDED: springBootEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:58.084
+!MESSAGE Boot project ADDED: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-12-31 14:26:58.084
+!MESSAGE Boot project ADDED: springBootRestEmployee
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-31 14:26:58.205
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\surya'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-12-31 14:36:34.972
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+!SESSION 2025-01-01 14:02:59.043 -----------------------------------------------
+eclipse.buildId=4.34.0.202411281622
+java.version=21.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-01 14:03:02.004
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-01 14:03:05.996
+!MESSAGE Logback config file: C:\SpringBootExamples\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.7.0.20241001-1350.xml
+
+!ENTRY org.eclipse.ui 2 0 2025-01-01 14:03:06.566
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-01 14:03:06.566
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2025-01-01 14:03:06.894
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2025-01-01 14:03:06.894
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-01 14:03:11.262
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.5.v20241023-1957\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/SpringBootExamples/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1735720391261
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\SpringSoftware\sts-4.27.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.59.0.202411281450\servers\spring-boot-language-server\spring-boot-language-server-1.59.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:11.262
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-01-01 14:03:11.277
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 17520
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2025-01-01 14:03:11.446
+!MESSAGE No search provider was registered. Tasks search is not available.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:13.267
+!MESSAGE Boot project ADDED: springBoot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:13.268
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:13.270
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:13.283
+!MESSAGE Boot project ADDED: springBootEmployee
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:13.292
+!MESSAGE Boot project ADDED: springBootRest
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-01-01 14:03:13.293
+!MESSAGE Boot project ADDED: springBootRestEmployee
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-01 14:03:13.416
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\surya'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
