@@ -8,12 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 //import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import com.staya.spring.rest.employeeentity.EmployeeEntitty;
 import com.staya.spring.rest.errorresponse.ErrorResponse;
@@ -162,5 +165,124 @@ public class EmployeeController {
     }
 	
 	
+	
+	
+	@DeleteMapping("/deleteempployee/{id}")
+	public ResponseEntity<?> dleteEmployeeById(@PathVariable ("id") Long id){
+		
+		boolean status= employeeService.dleteEmployeeById(id);
+		
+		if (status) {
+	        return ResponseEntity.status(HttpStatus.NO_CONTENT)
+	                .header("info", "Employee with ID " + id + " deleted")
+	                .body( "Employee with ID " + id + " deleted");
+	    } else {
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+	                .header("info", "Employee with ID " + id + " not found")
+	                .body( "Employee with ID " + id + " not found");
+	    }
+		
+		
+		
+	}
+	
+	
+	 @DeleteMapping("/deletebyemail/{email}")
+	    public ResponseEntity<Void> deleteEmployeeByEmail(@PathVariable("email") String email) {
+	        boolean status = employeeService.deleteEmployeeByEmail(email);
 
-}
+	        if (status) {
+	            return ResponseEntity.status(HttpStatus.NO_CONTENT)
+	                    .header("info", "Employee with email " + email + " deleted")
+	                    .build();
+	        } else {
+	            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+	                    .header("info", "Employee with email " + email + " not found")
+	                    .build();
+	        }
+	    }
+	 
+	 
+	 
+	 @DeleteMapping("/delete-by-salary-range")
+	    public ResponseEntity<?> deleteBySalaryRange(@RequestParam double startSalary, @RequestParam double endSalary) {
+	        boolean status = employeeService.deleteBySalaryRange(startSalary, endSalary);
+	        if (status) {
+	            return ResponseEntity.status(HttpStatus.NO_CONTENT)
+	            		              .header("info", "employee with give salary range deleted")
+	            		              .build();
+	        } else {
+	            return ResponseEntity.notFound().build();
+	        }
+	    }
+	 
+	 @DeleteMapping("/delete-by-email-and-dept")
+	    public ResponseEntity<?> deleteByEmailAndDept(@RequestParam String email, @RequestParam String dept) {
+	       boolean status= employeeService.deleteByEmailAndDept(email, dept);
+	       if(status) {
+	    	   
+	    	   return ResponseEntity.noContent().build();
+	    	   
+	       }
+	       
+	       else {
+	            return ResponseEntity.notFound().build();
+	        }
+	        
+	    }
+	 
+	 
+//	 @PutMapping("/update/{id}")
+//	 public ResponseEntity<?> updateEmployee(@PathVariable ("id") Long id,@RequestBody EmployeeEntitty newEmployee){
+//		 
+//		 employeeService.updateEmployee(id,newEmployee);
+//		 
+//		 
+//	 }
+	 
+	  @PutMapping("/update/{id}")
+	    public ResponseEntity<EmployeeEntitty> updateEmployee(@PathVariable Long id, @RequestBody EmployeeEntitty employeeDetails) {
+	        EmployeeEntitty updatedEmployee = employeeService.updateEmployee(id, employeeDetails);
+	        
+	        
+	        if (updatedEmployee != null) {
+	            return ResponseEntity.status(HttpStatus.OK)
+	                                 .header("info", "Updated employee of ID " + id + ".")
+	                                 .body(updatedEmployee);
+	        } else {
+	            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+	                                 .header("error", "Employee with ID " + id + " not found.")  //if the datai s no found this executes
+	                                 .build();
+	        }
+	    }
+	  
+	  /****************************************************************
+	   * 
+	   *                       API call unsig weather api
+	   * 
+	   * 
+	   */
+	  
+	  @GetMapping("/getweather")
+	  public ResponseEntity<String> getWeather(){
+		  RestTemplate restTemplate=new RestTemplate();
+		  ResponseEntity<String> response= restTemplate.getForEntity("https://api.openweathermap.org/data/2.5/weather?lat=15.505723&lon=80.049919&appid=23ddf896feb22f3e959148388cea67ee",String.class);
+		  return ResponseEntity.status(HttpStatus.OK)
+				                .header("info", "good")
+				                .body(response.getBody());
+	  }
+	  
+	  
+	  //*************************************************************************************
+	 
+	 
+	 
+	 
+	 
+	 
+	 }
+
+	
+	
+
+

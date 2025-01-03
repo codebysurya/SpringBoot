@@ -72,6 +72,73 @@ public List<EmployeeEntitty> saveAllEmployee(List<EmployeeEntitty> employeeEntit
 		return  employeeRepository.findEmpoyeeBySalaryRangeANDDept(minSalary, maxSalary, dept);
 	}
 
+
+
+	public boolean dleteEmployeeById(Long id) {
+		
+		
+		if(employeeRepository.existsById(id)) {
+			
+			employeeRepository.deleteById(id);
+			
+			return true;
+			
+		}
+		else {
+			return false;
+		}
+		
+	}
+
+
+
+	public boolean deleteEmployeeByEmail(String email) {
+        if (employeeRepository.existsByEmail(email)) {
+            employeeRepository.deleteByEmail(email);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+	public boolean deleteBySalaryRange(double startsalary, double endsalary) {
+	    int deletedCount = employeeRepository.deleteBySalaryRange(startsalary, endsalary);
+	    return deletedCount > 0; // Return true if records were deleted
+	}
+
+	
+	public boolean deleteByEmailAndDept(String email, String dept) {
+        employeeRepository.deleteByEmailAndDept(email, dept);
+        return true;
+    }
+
+
+
+	public EmployeeEntitty updateEmployee(Long id, EmployeeEntitty newEmployee) {
+		
+		
+		employeeRepository.findById(id);
+		  Optional<EmployeeEntitty> optionalEmployee = employeeRepository.findById(id);
+
+	        if (optionalEmployee.isPresent()) {
+	            EmployeeEntitty existingEmployee = optionalEmployee.get();
+	            existingEmployee.setName(newEmployee.getName());
+	            existingEmployee.setEmail(newEmployee.getEmail());
+	            existingEmployee.setAge(newEmployee.getAge());              // if these
+	            existingEmployee.setSalary(newEmployee.getSalary());
+	            existingEmployee.setDept(newEmployee.getDept());
+	            
+	            // Update other fields as necessary
+	            return employeeRepository.save(existingEmployee);
+	        }
+			return null;
+		
+	}
+	
+	
+
 	
 
 }
